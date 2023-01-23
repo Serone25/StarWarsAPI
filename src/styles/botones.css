@@ -1,0 +1,119 @@
+.botonIntro {
+    height: 40px;
+    width: 200px;
+    font-size: 20px;
+    background: black;
+    color: #fff;
+    border: 0.25rem solid #05cafc;
+    margin: 1rem;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+  }
+  .botonIntro:hover {
+    color: rgb(255, 255, 255);
+  }
+  .botonIntro::after {
+    content: "";
+    background: #05cafc;
+    position: absolute;
+    z-index: -1;
+    padding: 0.85em 0.75em;
+    display: block;
+  }
+  .botonIntro::after {
+    transition: all 0.35s;
+  }
+  .botonIntro:hover::after {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transition: all 0.35s;
+  }
+  .botonIntro::after {
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    right: 100%;
+  }
+
+  .botonPlanetas {
+    height: 40px;
+    width: 200px;
+    font-size: 20px;
+    background: black;
+    color: #fff;
+    border: 0.25rem solid #05fc26;
+    margin: 1rem;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+  }
+  .botonPlanetas:hover {
+    color: rgb(255, 255, 255);
+  }
+  .botonPlanetas::after {
+    content: "";
+    background: #05fc26;
+    position: absolute;
+    z-index: -1;
+    padding: 0.85em 0.75em;
+    display: block;
+  }
+  .botonPlanetas::after {
+    transition: all 0.35s;
+  }
+  .botonPlanetas:hover::after {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transition: all 0.35s;
+  }
+  .botonPlanetas::after {
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    right: 100%;
+  }
+
+  .botonPersonajes {
+    height: 40px;
+    width: 200px;
+    font-size: 20px;
+    background: black;
+    color: #fff;
+    border: 0.25rem solid #f00e0e;
+    margin: 1rem;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+  }
+  .botonPersonajes:hover {
+    color: rgb(255, 255, 255);
+  }
+  .botonPersonajes::after {
+    content: "";
+    background: #f00e0e;
+    position: absolute;
+    z-index: -1;
+    padding: 0.85em 0.75em;
+    display: block;
+  }
+  .botonPersonajes::after {
+    transition: all 0.35s;
+  }
+  .botonPersonajes:hover::after {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transition: all 0.35s;
+  }
+  .botonPersonajes::after {
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    right: 100%;
+  }

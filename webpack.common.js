@@ -2,6 +2,7 @@ const webpack = require('webpack');
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const Dotenv = require('dotenv-webpack');
+const SRC = path.resolve(__dirname, 'node_modules');
 
 module.exports = {
   entry: [
@@ -32,7 +33,17 @@ module.exports = {
             options: { name: '[name].[ext]' }
           }
         }, //for images
-        { test: /\.woff($|\?)|\.woff2($|\?)|\.ttf($|\?)|\.eot($|\?)|\.svg($|\?)/, use: ['file-loader'] } //for fonts
+        { test: /\.woff($|\?)|\.woff2($|\?)|\.ttf($|\?)|\.eot($|\?)|\.svg($|\?)/, use: ['file-loader'] }, //for fonts
+        {
+          test: /\.(mp3)$/,
+          include: SRC,
+          type:'asset/resource',
+          use:{
+            loader: 'file-loader',
+            options: {name:'[path][name].[ext]' }
+          }
+          
+        },
     ]
   },
   resolve: {
